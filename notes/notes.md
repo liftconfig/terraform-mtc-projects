@@ -1,4 +1,4 @@
- More than Certified in Terraform - Derek Morgan
+# More than Certified in Terraform - Derek Morgan
 
 Course projects: <https://github.com/liftconfig/terraform-mtc-projects>
 
