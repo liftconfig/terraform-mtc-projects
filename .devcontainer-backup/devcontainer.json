@@ -1,0 +1,24 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+  "name": "Ubuntu",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "amazonwebservices.aws-toolkit-vscode",
+        "DavidAnson.vscode-markdownlint",
+        "yzhang.markdown-all-in-one",
+        "qcz.text-power-tools",
+        //"valentjn.vscode-ltex",
+        "4ops.terraform",
+        "hashicorp.terraform"
+      ]
+    }
+  },
+  "postStartCommand": [
+    "cp id_rsa /home/vscode/.ssh/ && ssh-add /home/vscode/.ssh/id_rsa"
+  ]
+}
